@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterceptDemo.cs" />
+    <Compile Include="Intercept\InterceptAttribute.cs" />
+    <Compile Include="Intercept\InterceptProperty.cs" />
+    <Compile Include="Intercept\InterceptSink.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
