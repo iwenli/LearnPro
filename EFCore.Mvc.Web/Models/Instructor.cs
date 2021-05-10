@@ -7,31 +7,31 @@ using System.Threading.Tasks;
 
 namespace EFCore.Mvc.Web.Models
 {
-    public class Student
+    public class Instructor
     {
         public int ID { get; set; }
+
         [Required]
         [StringLength(50)]
         [Display(Name = "名")]
         public string LastName { get; set; }
+
         [Required]
-        [StringLength(50, ErrorMessage = "名字不能超过50个字符。")]
         [Column("FirstName")]
+        [StringLength(50)]
         [Display(Name = "姓")]
         public string FirstMidName { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [Display(Name = "入学时间")]
-        public DateTime EnrollmentDate { get; set; }
+
+        [DataType(DataType.Date), Display(Name = "入职日期"), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime HireDate { get; set; }
+
         [Display(Name = "姓名")]
         public string FullName
         {
-            get
-            {
-                return LastName + " " + FirstMidName;
-            }
+            get { return LastName + " " + FirstMidName; }
         }
 
-        public ICollection<Enrollment> Enrollments { get; set; }
+        public ICollection<Course> Courses { get; set; }
+        public OfficeAssignment OfficeAssignment { get; set; }
     }
 }
