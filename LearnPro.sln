@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore.Mvc.Web", "EFCore.Mv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore.SignalR", "EFCore.SignalR\EFCore.SignalR.csproj", "{BABE5C89-9D16-426C-B246-3327A43557EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore.SignalR.TS", "EFCore.SignalR.TS\EFCore.SignalR.TS.csproj", "{8705FCCB-1599-4467-AFB7-3D5ABEACE082}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{BABE5C89-9D16-426C-B246-3327A43557EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BABE5C89-9D16-426C-B246-3327A43557EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BABE5C89-9D16-426C-B246-3327A43557EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8705FCCB-1599-4467-AFB7-3D5ABEACE082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8705FCCB-1599-4467-AFB7-3D5ABEACE082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8705FCCB-1599-4467-AFB7-3D5ABEACE082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8705FCCB-1599-4467-AFB7-3D5ABEACE082}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
